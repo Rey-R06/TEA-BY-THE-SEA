@@ -1,0 +1,85 @@
+.custom-navbar {
+  background-color: #f5f0e1;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e0dcd3;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #b8d8e3;
+}
+
+.btn-outline-dark {
+  border-color: #333;
+  color: #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.login{
+    margin-left: 50px;
+}
+
+/* Estilo base para ambos */
+.nav-item.login .nav-link,
+.nav-item.registro .nav-link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para Login */
+.nav-item.login .nav-link {
+  background-color: #ffffff;
+  color: #1a3c40;
+  border: 1px solid #1a3c40;
+}
+
+.nav-item.login .nav-link:hover {
+  background-color: #1a3c40;
+  color: #ffffff;
+}
+
+/* Estilo para Registro */
+.nav-item.registro .nav-link {
+  background-color: #f1c5c0;
+  color: #1a3c40;
+  font-weight: bold;
+}
+
+.nav-item.registro .nav-link:hover {
+  background-color: #e6b5ae;
+  color: #ffffff;
+}
+
+
+/* Estilos responsivos para pantallas menores a 768px */
+@media (max-width: 768px) {
+  .login,
+  .registro {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .login .nav-link,
+  .registro .nav-link {
+    display: block;
+    text-align: center;
+  }
+}
