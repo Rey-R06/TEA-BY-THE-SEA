@@ -1,0 +1,42 @@
+:root {
+  /* Colores principales */
+  --color-arena: #f5f0e1;
+  --color-arena-claro: #f9f4ec;
+  --color-azul-suave: #a9c9d9;
+  --color-azul-claro: #d5e7ef;
+
+  /* Colores complementarios */
+  --color-blanco: #ffffff;
+  --color-gris-claro: #f5f5f5;
+  --color-gris-medio: #b0b0b0;
+  --color-rosa-pastel: #f1c5c0;
+
+  /* Tipografía */
+  --color-texto-principal: #333333;
+  --color-texto-secundario: #55555577;
+
+  /* Colores de acento */
+  --color-acento: #f2b8a0; /* tono coral suave */
+  --color-hover: #e09d85; /* tono coral más oscuro */
+}
+
+/* Ejemplos de clases con los colores */
+.bg-arena {
+  background-color: var(--color-arena);
+}
+
+.bg-azul-suave {
+  background-color: var(--color-azul-suave);
+}
+
+.text-principal {
+  color: var(--color-texto-principal);
+}
+
+.text-secundario {
+  color: var(--color-texto-secundario);
+}
+
+.text-acento {
+  color: var(--color-acento);
+}

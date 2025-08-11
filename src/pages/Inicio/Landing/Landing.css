@@ -1,0 +1,82 @@
+.hero {
+  background-image: url("/hero.jpg");
+  background-size: cover;       /* La imagen cubre todo el contenedor */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repetición */
+  width: 100%;
+  min-height: 80vh;              /* Ocupa el 80% de la altura de la ventana */
+  display: flex;
+  align-items: center;           /* Centra verticalmente el contenido */
+  justify-content: center;       /* Centra horizontalmente el contenido */
+  padding: 20px;
+  color: white;                  /* Texto blanco */
+  text-align: center;
+}
+
+.titulo {
+  font-size: 4rem; 
+  color: var(--color-gris-claro);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 1.5);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.parrafo {
+  font-size: 1.2rem; /* tamaño base */
+  color: var(--color-gris-claro);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+.botonReservar {
+  display: inline-block;
+  background-color: var(--color-primario, #f7a39a); /* rosa base */
+  color: var(--color-texto-claro, #fff);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* totalmente redondeado */
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botonReservar:hover {
+  background-color: var(--color-primario-hover, #f7a39a); /* rosa más oscuro */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.botonReservar:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .hero {
+    min-height: 60vh;  /* Un poco menos en móviles */
+    padding: 15px;
+  }
+  .parrafo {
+    font-size: 1.3rem;
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1400px) {
+  .hero {
+    min-height: 90vh; /* Que ocupe toda la pantalla */
+  }
+  .parrafo {
+    font-size: 1.6rem;
+  }
+}
